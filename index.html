@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meine Website</title>
+  <meta name="description" content="Moderne Website – gebaut mit HTML, CSS und JavaScript." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Hauptnavigation">
+      <div class="logo">
+        <span class="logo-badge" aria-hidden="true"></span>
+        <span>MeineWebsite</span>
+      </div>
+
+      <button
+        id="menuToggle"
+        class="menu-toggle"
+        aria-controls="navLinks"
+        aria-expanded="false"
+        aria-label="Menü öffnen"
+        type="button"
+      >
+        ☰ Menü
+      </button>
+
+      <ul id="navLinks" class="nav-links">
+        <li><a href="index.html#home">Start</a></li>
+        <li><a href="index.html#about">Über mich</a></li>
+        <li><a href="index.html#services">Leistungen</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero container">
+      <div class="hero-grid">
+        <div>
+          <div class="kicker">Website in Arbeit · Clean · Modern</div>
+          <h1>Hallo, Ich bin <span style="color: var(--accent);">ter Meer Classics</span></h1>
+          <p class="lead">
+            Ich baue gerade meine eigene Website – Schritt für Schritt, professionell und responsiv.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="contact.html">Kontakt aufnehmen</a>
+            <a class="btn btn-ghost" href="about.html">Mehr über mich</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h3>Was du hier bekommst</h3>
+          <p>Eine solide Website-Basis, die wir später kostenlos online stellen können.</p>
+          <p style="margin-top:12px; color: var(--muted);">
+            ✅ Responsive Menü<br />
+            ✅ Mehrere Seiten<br />
+            ✅ Sauberes Design
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2 class="section-title">Über mich</h2>
+      <p class="section-sub">
+        Schreib hier 2–4 Sätze über dich: wer du bist, was du machst, wofür du stehst.
+      </p>
+
+      <div class="split">
+        <div class="panel">
+          <h3>Kurze Story</h3>
+          <p>
+            Beispiel: Ich interessiere mich für Webdesign & Entwicklung und baue gerade mein Portfolio auf.
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Skills / Tools</h3>
+          <p>HTML · CSS · JavaScript · VS Code · Git (später)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section container">
+      <h2 class="section-title">Leistungen</h2>
+      <p class="section-sub">Drei Karten – später ersetzen wir sie durch echte Angebote.</p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Webdesign</h3>
+          <p>Layouts, Farben, Typografie – modern und übersichtlich.</p>
+        </article>
+        <article class="card">
+          <h3>Entwicklung</h3>
+          <p>Sauberer Code, responsive Design, gute Performance.</p>
+        </article>
+        <article class="card">
+          <h3>Beratung</h3>
+          <p>Was brauchst du wirklich? Klarer Plan statt Chaos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2 class="section-title">Kontakt</h2>
+      <p class="section-sub">
+        Für ein echtes Formular nutzen wir später Hosting oder einen kostenlosen Form-Service.
+      </p>
+      <a class="btn" href="contact.html">Zur Kontaktseite</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner container">
+      <div>© 2026 MeineWebsite</div>
+      <div style="display:flex; gap:14px;">
+        <a href="about.html">Über mich</a>
+        <a href="contact.html">Kontakt</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
