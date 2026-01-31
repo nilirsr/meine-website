@@ -14,6 +14,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 img {
@@ -245,10 +246,8 @@ body {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(246, 243, 238, .25) 0%, rgba(246, 243, 238, .85) 72%, rgba(246, 243, 238, 1) 100%),
     url("assets/images/hero.jpg");
   background-size: cover;
-  background-position: center;
 }
 
 /* content sits above */
