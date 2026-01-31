@@ -557,8 +557,12 @@ body {
   }
 
   .brand img {
-    height: 54px;
+    width: clamp(220px, 20vw, 340px);
+    height: auto;
+    display: block;
   }
+
+
 
   /* show mobile toggle */
   .menu-toggle {
@@ -573,25 +577,30 @@ body {
   .nav-links {
     display: none;
     position: absolute;
-    left: 4%;
-    right: 4%;
-    top: 112px;
+    left: 2%;
+    right: 2%;
+    top: 140px;
+    /* weiter runter = mehr Ruhe */
     background: rgba(251, 250, 247, .98);
     border: 1px solid rgba(27, 34, 53, .18);
-    border-radius: 16px;
-    padding: 12px;
+    border-radius: 20px;
+    padding: 20px 24px;
+    /* mehr Luft */
     flex-direction: column;
-    gap: 8px;
+    gap: 14px;
+    /* mehr Abstand */
     box-shadow: var(--shadow);
   }
+
 
   .nav-links.open {
     display: flex;
   }
 
-  .nav-link {
-    padding: 10px 8px;
+  .nav {
+    padding: 32px 0;
   }
+
 
   .hero {
     min-height: 62vh;
