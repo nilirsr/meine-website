@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Meine Website</title>
-  <meta name="description" content="Moderne Website – gebaut mit HTML, CSS und JavaScript." />
+  <title>ter Meer Classics — Vespa & Piaggio Ciao</title>
+  <meta name="description" content="Qualitativer Händler, Restaurator & Service für historische Vespa und Piaggio Ciao. Neuaufbau, Restauration, Tuning sowie An- und Verkauf." />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -13,10 +13,9 @@
 
   <header class="site-header">
     <nav class="nav container" aria-label="Hauptnavigation">
-      <div class="logo">
-        <span class="logo-badge" aria-hidden="true"></span>
-        <span>MeineWebsite</span>
-      </div>
+      <a class="brand" href="index.html" aria-label="ter Meer Classics Startseite">
+        <img src="assets/images/logo.png" alt="ter Meer Classics Logo" />
+      </a>
 
       <button
         id="menuToggle"
@@ -30,96 +29,184 @@
       </button>
 
       <ul id="navLinks" class="nav-links">
-        <li><a href="index.html#home">Start</a></li>
-        <li><a href="index.html#about">Über mich</a></li>
-        <li><a href="index.html#services">Leistungen</a></li>
+        <li><a href="#angebote">Angebote</a></li>
+        <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#projekte">Projekte</a></li>
         <li><a href="contact.html">Kontakt</a></li>
       </ul>
+
+      <div class="nav-cta">
+        <a class="btn btn-ghost" href="#angebote">Fahrzeuge</a>
+        <a class="btn btn-primary" href="contact.html">Anfrage</a>
+      </div>
     </nav>
   </header>
 
   <main id="main">
-    <section id="home" class="hero container">
+    <!-- HERO -->
+    <section class="hero container">
       <div class="hero-grid">
         <div>
-          <div class="kicker">Website in Arbeit · Clean · Modern</div>
-          <h1>Hallo, Ich bin <span style="color: var(--accent);">ter Meer Classics</span></h1>
+          <div class="kicker">Händler · Restaurator · Service</div>
+          <h1>Historische Vespa & Piaggio Ciao — elegant kuratiert.</h1>
           <p class="lead">
-            Ich baue gerade meine eigene Website – Schritt für Schritt, professionell und responsiv.
+            ter Meer Classics steht für einen schlichten, qualitativen Ansatz:
+            Neuaufbauten, Restaurationen, Tuning und der An- und Verkauf ausgewählter Modelle —
+            stets sauber dokumentiert und handwerklich präzise.
           </p>
-          <div class="hero-actions">
-            <a class="btn" href="contact.html">Kontakt aufnehmen</a>
-            <a class="btn btn-ghost" href="about.html">Mehr über mich</a>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn btn-primary" href="contact.html">Projekt anfragen</a>
+            <a class="btn btn-ghost" href="#angebote">Aktuelle Angebote</a>
           </div>
         </div>
 
-        <div class="hero-card">
-          <h3>Was du hier bekommst</h3>
-          <p>Eine solide Website-Basis, die wir später kostenlos online stellen können.</p>
-          <p style="margin-top:12px; color: var(--muted);">
-            ✅ Responsive Menü<br />
-            ✅ Mehrere Seiten<br />
-            ✅ Sauberes Design
+        <aside class="hero-card">
+          <h3>Schwerpunkte</h3>
+          <p><strong>Neuaufbau</strong> · <strong>Restauration</strong> · <strong>Tuning</strong></p>
+          <p style="margin-top:10px;">An- & Verkauf historischer Modelle</p>
+          <p style="margin-top:10px; color: rgba(255,255,255,.78);">
+            Stil: marine, klar, traditionsbewusst
           </p>
-        </div>
+        </aside>
       </div>
     </section>
 
-    <section id="about" class="section container">
-      <h2 class="section-title">Über mich</h2>
-      <p class="section-sub">
-        Schreib hier 2–4 Sätze über dich: wer du bist, was du machst, wofür du stehst.
-      </p>
-
-      <div class="split">
-        <div class="panel">
-          <h3>Kurze Story</h3>
-          <p>
-            Beispiel: Ich interessiere mich für Webdesign & Entwicklung und baue gerade mein Portfolio auf.
-          </p>
+    <!-- PAPER MAIN -->
+    <div class="main">
+      <!-- ANGEBOTE / KATALOG -->
+      <section id="angebote" class="section container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Aktuelle Angebote</h2>
+            <p class="section-sub">Bechtel-Logik: wie ein sauberer Katalog. Später ersetzen wir die Platzhalter durch echte Inserate.</p>
+          </div>
+          <a class="btn btn-primary" href="contact.html">Ankauf / Anfrage</a>
         </div>
-        <div class="panel">
-          <h3>Skills / Tools</h3>
-          <p>HTML · CSS · JavaScript · VS Code · Git (später)</p>
+        <div class="hr"></div>
+
+        <!-- Filterbar (optional, wirkt sehr "Bechtel") -->
+        <div class="filterbar" aria-label="Filter">
+          <span class="chip active">Alle</span>
+          <span class="chip">Vespa</span>
+          <span class="chip">Piaggio Ciao</span>
+          <span class="chip">Verkauft</span>
         </div>
-      </div>
-    </section>
 
-    <section id="services" class="section container">
-      <h2 class="section-title">Leistungen</h2>
-      <p class="section-sub">Drei Karten – später ersetzen wir sie durch echte Angebote.</p>
+        <div class="grid">
+          <article class="card">
+            <div class="card-media"></div>
+            <div class="card-body">
+              <h3 class="card-title">Vespa (Beispiel)</h3>
+              <p class="card-meta">Baujahr · Zustand · Kurzinfo</p>
+              <span class="badge">Details</span>
+            </div>
+          </article>
 
-      <div class="cards">
-        <article class="card">
-          <h3>Webdesign</h3>
-          <p>Layouts, Farben, Typografie – modern und übersichtlich.</p>
-        </article>
-        <article class="card">
-          <h3>Entwicklung</h3>
-          <p>Sauberer Code, responsive Design, gute Performance.</p>
-        </article>
-        <article class="card">
-          <h3>Beratung</h3>
-          <p>Was brauchst du wirklich? Klarer Plan statt Chaos.</p>
-        </article>
-      </div>
-    </section>
+          <article class="card">
+            <div class="card-media"></div>
+            <div class="card-body">
+              <h3 class="card-title">Piaggio Ciao (Beispiel)</h3>
+              <p class="card-meta">Baujahr · Zustand · Kurzinfo</p>
+              <span class="badge">Details</span>
+            </div>
+          </article>
 
-    <section id="contact" class="section container">
-      <h2 class="section-title">Kontakt</h2>
-      <p class="section-sub">
-        Für ein echtes Formular nutzen wir später Hosting oder einen kostenlosen Form-Service.
-      </p>
-      <a class="btn" href="contact.html">Zur Kontaktseite</a>
-    </section>
+          <article class="card">
+            <div class="card-media"></div>
+            <div class="card-body">
+              <h3 class="card-title">Neuaufbau / Custom (Beispiel)</h3>
+              <p class="card-meta">Konzept · Teile · Aufbau</p>
+              <span class="badge">Anfragen</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- LEISTUNGEN -->
+      <section id="leistungen" class="section container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Leistungen</h2>
+            <p class="section-sub">Klar & seriös: Was wir machen und wie wir arbeiten.</p>
+          </div>
+        </div>
+        <div class="hr"></div>
+
+        <div class="grid">
+          <div class="service">
+            <h3>Restauration</h3>
+            <ul>
+              <li>Substanz prüfen, dokumentieren, beraten</li>
+              <li>Originaltreue Aufbereitung & Finish</li>
+              <li>Detailarbeit: Technik, Optik, Patina/Neuzustand</li>
+            </ul>
+          </div>
+
+          <div class="service">
+            <h3>Neuaufbau</h3>
+            <ul>
+              <li>Konzept, Teilewahl, saubere Umsetzung</li>
+              <li>Aufbau mit Fokus auf Qualität & Haltbarkeit</li>
+              <li>Abstimmung, Probefahrt, Übergabe</li>
+            </ul>
+          </div>
+
+          <div class="service">
+            <h3>Tuning & Service</h3>
+            <ul>
+              <li>Motor / Setup / Abstimmung</li>
+              <li>Wartung, Fehlerdiagnose, Optimierung</li>
+              <li>Sinnvolle Leistungsstufen (Road-Setup)</li>
+            </ul>
+          </div>
+
+          <div class="service">
+            <h3>An- & Verkauf</h3>
+            <ul>
+              <li>Kuratiertes Sortiment (Qualität vor Masse)</li>
+              <li>Ankauf nach Prüfung & Dokumentation</li>
+              <li>Transparente Zustandsbeschreibung</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJEKTE -->
+      <section id="projekte" class="section container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-title">Werkstatt & Projekte</h2>
+            <p class="section-sub">Hier bauen wir später eine Galerie/Projektliste (Before/After, Detailaufnahmen, Dokumentation).</p>
+          </div>
+        </div>
+        <div class="hr"></div>
+
+        <div class="cta-band" style="margin-top:18px;">
+          <div>
+            <strong>Ein Projekt planen?</strong>
+            <p>Modell + Wunsch + Budgetrahmen – wir antworten strukturiert.</p>
+          </div>
+          <a class="btn btn-primary" href="contact.html">Kontakt</a>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="footer">
     <div class="footer-inner container">
-      <div>© 2026 MeineWebsite</div>
-      <div style="display:flex; gap:14px;">
-        <a href="about.html">Über mich</a>
-        <a href="contact.html">Kontakt</a>
+      <div>
+        <div style="font-weight:900; letter-spacing:.2px;">ter Meer Classics</div>
+        <div style="margin-top:8px;">Historische Vespa & Piaggio Ciao · Händler · Restaurator · Service</div>
+        <div style="margin-top:10px;">E-Mail: <a href="mailto:info@termeerclassics.de">info@termeerclassics.de</a></div>
+      </div>
+
+      <div>
+        <div style="font-weight:900;">Rechtliches</div>
+        <div style="margin-top:10px; display:grid; gap:8px;">
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+          <a href="contact.html">Kontakt</a>
+        </div>
       </div>
     </div>
   </footer>
