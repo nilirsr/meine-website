@@ -39,7 +39,7 @@ ul {
   /* classy navy (logo-fit) */
   --navy-2: #0f1f33;
   /* deep navy for overlays */
-  --ivory: #f6f3ee;
+  --paper: #fbfaf7;
   /* Bechtel-like ivory */
   --paper: #fbfaf7;
   /* slightly brighter paper */
@@ -64,7 +64,7 @@ ul {
 /* ---------- Base ---------- */
 body {
   font-family: var(--sans);
-  background: var(--ivory);
+  background: var(--paper);
   color: var(--ink);
   line-height: 1.6;
 }
@@ -137,7 +137,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 60;
-  background: rgba(246, 243, 238, .92);
+  background: rgba(255, 255, 255, .96);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--rule);
 }
