@@ -138,8 +138,8 @@ body {
   position: sticky;
   top: 0;
   z-index: 60;
-  background: rgba(255, 255, 255, .96);
-  backdrop-filter: blur(10px);
+  background: #FEFEFE;
+  backdrop-filter: none;
   border-bottom: 1px solid var(--rule);
 }
 
