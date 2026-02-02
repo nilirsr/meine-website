@@ -66,7 +66,7 @@ ul {
 body {
   font-family: var(--sans);
   background: #FEFEFE;
-  color: var(--ink);
+  color: #FEFEFE;
   line-height: 1.6;
 }
 
