@@ -36,18 +36,18 @@ ul {
 /* ---------- Theme ---------- */
 :root {
   /* Brand */
-  --navy: #1b2235;
+  --navy: #2B2943;
   /* classy navy (logo-fit) */
-  --navy-2: #0f1f33;
+  --navy-2: #2B2943;
   /* deep navy for overlays */
   --paper: #FEFEFE;
   /* Bechtel-like ivory */
   --paper: #FEFEFE;
   /* slightly brighter paper */
-  --ink: #111827;
+  --ink: #2B2943;
   /* main text */
-  --muted: rgba(17, 24, 39, .68);
-  --rule: rgba(27, 34, 53, .18);
+  --muted: #2B2943;
+  --rule: #2B2943;
 
   /* UI */
   --radius: 14px;
