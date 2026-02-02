@@ -40,9 +40,9 @@ ul {
   /* classy navy (logo-fit) */
   --navy-2: #0f1f33;
   /* deep navy for overlays */
-  --paper: #fbfaf7;
+  --paper: #FEFEFE;
   /* Bechtel-like ivory */
-  --paper: #fbfaf7;
+  --paper: #FEFEFE;
   /* slightly brighter paper */
   --ink: #111827;
   /* main text */
@@ -258,7 +258,7 @@ body {
 
 .hero-box {
   width: min(760px, 100%);
-  background: rgba(251, 250, 247, .92);
+  background: #FEFEFE;
   border: 1px solid rgba(27, 34, 53, .18);
   border-radius: 14px;
   box-shadow: var(--shadow);
