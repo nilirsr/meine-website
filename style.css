@@ -65,7 +65,7 @@ ul {
 /* ---------- Base ---------- */
 body {
   font-family: var(--sans);
-  background: var(--paper);
+  background: #FEFEFE;
   color: var(--ink);
   line-height: 1.6;
 }
@@ -314,7 +314,7 @@ body {
 
 .btn-primary {
   background: var(--navy);
-  color: #fff;
+  color: #FEFEFE;
   border-color: var(--navy);
 }
 
@@ -472,7 +472,7 @@ body {
   border: 1px solid rgba(27, 34, 53, .20);
   border-radius: 16px;
   padding: 18px 18px;
-  background: rgba(251, 250, 247, .92);
+  background: #FEFEFE;
   display: flex;
   align-items: center;
   justify-content: space-between;
