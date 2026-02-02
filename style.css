@@ -221,7 +221,7 @@ body {
 .menu-toggle {
   display: none;
   border: 1px solid var(--rule);
-  background: rgba(255, 255, 255, .55);
+  background: #FEFEFE;
   color: rgba(27, 34, 53, .9);
   border-radius: 999px;
   padding: 10px 12px;
@@ -499,7 +499,7 @@ body {
 .footer {
   margin-top: 40px;
   border-top: 1px solid var(--rule);
-  background: rgba(246, 243, 238, .92);
+  background: #2E2E49;
 }
 
 .footer-inner {
@@ -512,14 +512,14 @@ body {
 .footer-title {
   font-family: var(--serif);
   font-weight: 600;
-  color: var(--navy);
+  color: #FEFEFE;
   margin-bottom: 8px;
   letter-spacing: .01em;
 }
 
 .footer-text {
   margin: 0 0 8px;
-  color: rgba(17, 24, 39, .70);
+  color: #FEFEFE;
 }
 
 .footer-links {
@@ -528,13 +528,13 @@ body {
 }
 
 .footer-links a {
-  color: rgba(27, 34, 53, .80);
+  color: #FEFEFE;
   text-decoration: underline;
   text-underline-offset: 5px;
 }
 
 .footer-links a:hover {
-  color: var(--navy);
+  color: #FEFEFE;
 }
 
 /* ============================
@@ -580,7 +580,7 @@ body {
     right: 2%;
     top: 140px;
     /* weiter runter = mehr Ruhe */
-    background: rgba(251, 250, 247, .98);
+    background: #FEFEFE;
     border: 1px solid rgba(27, 34, 53, .18);
     border-radius: 20px;
     padding: 20px 24px;
